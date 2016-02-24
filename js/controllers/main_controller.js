@@ -1,6 +1,8 @@
-app.controller('MainController', function ($scope) {
-  $scope.goSearch = function() {
-    console.log($scope.searchterm);
-    $scope.searchterm = null;
+app.controller('MainController', function ($scope, $http) {
+  $scope.runSearch = function() {
+    $http.get("http://www.omdbapi.com/?s=" + $scope.searchterm).then(function(results){
+      $scope.searchresults = results.data;
+      $scope.searchterm = null;
+    });
   }
 });
