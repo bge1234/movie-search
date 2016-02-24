@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p>{{movieinfo.Title}}</p><br>
+      </div>
+      <div class="left">
+        <img src="{{movieinfo.Poster}}">
+      </div>
+      <div class="right">
+        <br><p class= "starring">Starring: <em>{{movieinfo.Actors}}</em></p><br><br>
+        <p class= "plot">{{movieinfo.Plot}}</p>
+      </div>
+      <div class="bottom">
+        <center><strong>Additional information</strong></center>
+        <table>
+          <tr>
+            <td>Released:</td>
+            <td>{{movieinfo.Released}}</td>
+          </tr>
+          <tr>
+            <td>Rated:</td>
+            <td>{{movieinfo.Rated}}</td>
+          </tr>
+          <tr>
+            <td>Genre:</td>
+            <td>{{movieinfo.Genre}}</td>
+          </tr>
+          <tr>
+            <td>Awards:</td>
+            <td>{{movieinfo.Awards}}</td>
+          </tr>
+          <tr>
+            <td>Director:</td>
+            <td>{{movieinfo.Director}}</td>
+          </tr>
+          <tr>
+            <td>Writer:</td>
+            <td>{{movieinfo.Writer}}</td>
+          </tr>
+          <tr>
+            <td>Runtime:</td>
+            <td>{{movieinfo.Runtime}}</td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>{{movieinfo.Country}}</td>
+          </tr>
+          <tr>
+            <td>Language:</td>
+            <td>{{movieinfo.Language}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

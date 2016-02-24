@@ -1,3 +1,0 @@
-- Set up route using imdbID to do another API call for only that movie.
-- Set up show page for individual movie as partial.
-- CSS.
