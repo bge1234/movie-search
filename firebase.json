@@ -1,0 +1,9 @@
+{
+  "firebase": "movie-search-benebel",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
