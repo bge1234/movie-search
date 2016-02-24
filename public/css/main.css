@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+h1 {
+  margin-top: 10px;
+}
+
 .container {
   width: 500px;
   margin: 0 auto;
