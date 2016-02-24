@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myapp">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-
+  <body ng-controller="MainController">
+    <main>
+      <center>
+        <h1>Angular OMDb API Search</h1>
+        <form ng-submit="goSearch()">
+          <label>Enter a movie title:<br>
+            <input type="text" ng-model="searchterm" placeholder="Title"><br>
+            <input type="submit" value="Search">
+          </label>
+        </form>
+      </center>
+      <br>
+      <hr>
+      <br>
+      <div ng-view></div>
+    </main>
+    <script type="text/javascript" src="https://code.angularjs.org/1.5.0/angular.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers/main_controller.js"></script>
+    <script type="text/javascript" src="js/controllers/search_controller.js"></script>
   </body>
 </html>
