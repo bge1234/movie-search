@@ -5,8 +5,13 @@
     <title></title>
   </head>
   <body>
-  <ul ng-repeat="movie in searchresults.Search">
-    <li><a href="#/searchresults/{{movie.imdbID}}" ng-click="searchById()"><strong>{{movie.Title}}</strong> (<em>{{movie.Year}}</em>)</a></li>
-  </ul>
+  <div ng-repeat="movie in searchresults.Search">
+    <a href="#/searchresults/{{movie.imdbID}}" ng-click="searchById()">
+      <div>
+        <img class="resultsimage" src="{{movie.Poster}}">
+        <strong>{{movie.Title}}</strong> (<em>{{movie.Year}}</em>)
+      </div>
+    </a>
+  </div>
   </body>
 </html>
